@@ -16,6 +16,11 @@ jobs:
     name: Build and Deploy Job
     steps:
     - uses: actions/checkout@v1
+
+    - uses: hallee/eslint-action@master
+      with:
+        repo-token: ${{secrets.GITHUB_TOKEN}}
+
     - name: Build And Deploy
       id: builddeploy
       uses: joslinmicrosoft/staticsitesactionoryx@canary3
