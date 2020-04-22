@@ -1,0 +1,59 @@
+#bumper {
+  height: 50px;
+}
+
+.feed {
+  margin-left: 27px;
+}
+
+.time-line {
+  height: 2px;
+  background-color: #e0672a;
+}
+
+.feed > .columns {
+  margin-left: 0px;
+}
+
+.column.feed-line {
+  padding: 0px;
+}
+
+.line-item {
+  border-left: 2px solid #e0672a;
+}
+
+.columns.line-item {
+  margin-left: 0;
+}
+
+.line-item:nth-child(odd) > .feed-line {
+  max-width: 300px;
+}
+
+.line-item:nth-child(even) > .feed-line {
+  max-width: 200px;
+}
+
+.feed-item {
+  max-width: 570px;
+  min-height: 200px;
+  padding-bottom: 40px;
+}
+
+.created {
+  margin-left: 10px;
+}
+
+#loader {
+  width: 50vh;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video {
+  max-width: 500px;
+}
